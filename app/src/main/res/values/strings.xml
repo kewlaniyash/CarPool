@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">NJIT CarPool</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="search_ride">Search Ride</string>
+    <string name="offer_ride">Offer Ride</string>
+    <string name="log_out">Log Out</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="todo">TODO</string>
+    <string name="btn_search">Button</string>
+    <string name="buttin_a">Buttin a</string>
+    <string name="search_for_ride">Search_for_ride</string>
+    <string name="search">Search</string>
+    <string name="njit_carpool">NJIT CarPool</string>
+    <string name="start_carpooling">Start Carpooling</string>
+    <string name="update">Update</string>
+    <string name="logout">Logout</string>
+    <string name="copyright_2020_all_rights_reserved">© Copyright 2020. All Rights Reserved</string>
+    <string name="todo1">TODO1</string>
+    <string name="welcome">Welcome</string>
+    <string name="please_login_or_create_a_new_account">• Please login or create a new account.</string>
+    <string name="click_on_register_to_create_a_new_account">• Please login or create a new account.</string>
+    <string name="email">email@example.com</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="Create_register_text">• Click on \"Register\" to create a new account.</string>
+    <string name="welcome_to_njit_highlander_please_fill_in_the_fields_below">• Welcome to NJIT highlander, please fill in the fields below</string>
+    <string name="carpool">CarPool</string>
+    <string name="todo5">TODO5</string>
+    <string name="todo4">TODO4</string>
+
+
+</resources>
