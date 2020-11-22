@@ -32,7 +32,6 @@ public class Register extends AppCompatActivity {
     public static final String TAG = "TAG";
     EditText mFullName,mEmail,mPassword;
     Button mRegisterBtn;
-    TextView mLoginBtn;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
     FirebaseFirestore fStore;
