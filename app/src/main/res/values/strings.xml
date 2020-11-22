@@ -37,6 +37,8 @@
     <string name="carpool">CarPool</string>
     <string name="todo5">TODO5</string>
     <string name="todo4">TODO4</string>
+    <string name="register_now">Register Now!</string>
+    <string name="phone_number">Phone Number</string>
 
 
 </resources>

@@ -30,8 +30,8 @@ import java.util.Map;
 
 public class Register extends AppCompatActivity {
     public static final String TAG = "TAG";
-    EditText mFullName,mEmail,mPassword;
-    Button mRegisterBtn;
+    EditText mFullName,mEmail,mPassword,mPhone;
+    Button mRegister;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
     FirebaseFirestore fStore;
@@ -45,24 +45,22 @@ public class Register extends AppCompatActivity {
         mFullName   = findViewById(R.id.name);
         mEmail      = findViewById(R.id.email);
         mPassword   = findViewById(R.id.password);
-        mRegisterBtn = findViewById(R.id.registercall);
+        mPhone      = findViewById(R.id.phone);
+        mRegister = findViewById(R.id.register);
+
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
-        if(fAuth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            finish();
-        }
 
-
-        mRegisterBtn.setOnClickListener(new View.OnClickListener() {
+        mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
                 final String fullName = mFullName.getText().toString();
+                final String phone    = mPhone.getText().toString();
 
                 if(TextUtils.isEmpty(email)){
                     mEmail.setError("Email is Required.");
@@ -75,7 +73,7 @@ public class Register extends AppCompatActivity {
                 }
 
                 if(password.length() < 6){
-                    mPassword.setError("Password Must be >= 6 Characters");
+                    mPassword.setError("Password Must be greater than 6 Characters");
                     return;
                 }
 
@@ -109,6 +107,7 @@ public class Register extends AppCompatActivity {
                             Map<String,Object> user = new HashMap<>();
                             user.put("fName",fullName);
                             user.put("email",email);
+                            user.put("phone",phone);
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
@@ -130,7 +129,6 @@ public class Register extends AppCompatActivity {
                 });
             }
         });
-
 
 
     }

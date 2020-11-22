@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Register"
+        android:text="@string/register"
         android:textSize="45sp"
         android:textStyle="bold"
         app:fontFamily="@font/itc_font"
@@ -148,8 +148,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.47" />
 
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="297dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:autofillHints=""
+        android:background="#D1CBCB"
+        android:ems="10"
+        android:fontFamily="@font/itc_font"
+        android:hint="@string/phone_number"
+        android:includeFontPadding="true"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568" />
+
     <Button
-        android:id="@+id/registercall"
+        android:id="@+id/register"
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:background="#CA0303"
@@ -163,7 +186,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674" />
+        app:layout_constraintVertical_bias="0.795" />
 
     <ProgressBar
         android:id="@+id/register_progress"
@@ -176,7 +199,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintVertical_bias="0.896" />
 
     <EditText
         android:id="@+id/password"
@@ -195,6 +218,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
+        app:layout_constraintVertical_bias="0.661" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

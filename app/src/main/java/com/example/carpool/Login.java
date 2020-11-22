@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         fAuth = FirebaseAuth.getInstance();
         mLoginBtn = findViewById(R.id.login);
-        mRegisterBtn = findViewById(R.id.registercall);
+        mRegisterBtn = findViewById(R.id.register_call);
 
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,7 +60,7 @@ public class Login extends AppCompatActivity {
                 }
 
                 if(password.length() < 6){
-                    mPassword.setError("Password Must be >= 6 Characters");
+                    mPassword.setError("Password Must be greater than 6 Characters");
                     return;
                 }
 
@@ -72,7 +72,7 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(Login.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "Logged in Successfully!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         }else {
                             Toast.makeText(Login.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
