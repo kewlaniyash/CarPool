@@ -6,23 +6,6 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <Button
-        android:id="@+id/register_call"
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-        android:background="#CA0303"
-        android:fontFamily="@font/itc_font"
-        android:text="@string/register_now"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:backgroundTint="#CA0303"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -54,26 +37,39 @@
         android:layout_height="wrap_content"
 
         android:text="@string/welcome"
-        android:textSize="40sp"
+        android:textSize="45sp"
         android:textStyle="bold"
         app:fontFamily="@font/itc_font"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.076" />
+        app:layout_constraintVertical_bias="0.257" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="198dp"
+        android:layout_height="177dp"
+        android:contentDescription="@string/todo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/njit" />
 
     <View
-        android:id="@+id/divider3"
+        android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#CA0303"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257" />
+        app:layout_constraintVertical_bias="0.311" />
 
     <TextView
         android:id="@+id/textView5"
@@ -92,23 +88,29 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintVertical_bias="0.372" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="121dp"
-        android:layout_height="102dp"
-        android:contentDescription="@string/todo1"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/please_login_or_create_a_new_account"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/itc_font"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034"
-        app:srcCompat="@drawable/njit" />
+        app:layout_constraintVertical_bias="0.341" />
 
     <View
-        android:id="@+id/divider2"
+        android:id="@+id/divider3"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#CA0303"
@@ -117,7 +119,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.167" />
+        app:layout_constraintVertical_bias="0.4" />
 
     <EditText
         android:id="@+id/email"
@@ -139,8 +141,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/password"
@@ -159,43 +160,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/please_login_or_create_a_new_account"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:fontFamily="@font/itc_font"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.602" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/register_call"
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:background="#CA0303"
         android:fontFamily="@font/itc_font"
-        android:text="@string/login"
+        android:text="@string/register_now"
         android:textSize="16sp"
         android:textStyle="bold"
         app:backgroundTint="#CA0303"
+        app:icon="@drawable/register"
+        app:iconSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.536" />
+        app:layout_constraintVertical_bias="0.809" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -208,6 +192,25 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727" />
+        app:layout_constraintVertical_bias="0.898" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="#CA0303"
+        android:fontFamily="@font/itc_font"
+        android:text="@string/login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#CA0303"
+        app:icon="@drawable/login"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

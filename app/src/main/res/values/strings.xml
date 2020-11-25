@@ -39,6 +39,9 @@
     <string name="todo4">TODO4</string>
     <string name="register_now">Register Now!</string>
     <string name="phone_number">Phone Number</string>
+    <string name="update_user">Update User</string>
+    <string name="back">Back</string>
+    <string name="update">Update</string>
 
 
 </resources>
