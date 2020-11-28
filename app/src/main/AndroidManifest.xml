@@ -12,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NJITCarPool">
+        <activity android:name=".UpdateActivity"/>
+        <activity android:name=".SearchRide"/>
+        <activity android:name=".OfferRide"/>
         <activity android:name=".Register"/>
         <activity android:name=".Login"/>
         <activity android:name=".Splash">

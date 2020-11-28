@@ -41,7 +41,10 @@
     <string name="phone_number">Phone Number</string>
     <string name="update_user">Update User</string>
     <string name="back">Back</string>
-    <string name="update">Update</string>
+
+    <string name="you_can_search_for_rides_to_from_njit_by_selecting_the_appropriate_task">• You can search for rides to/from NJIT by selecting the appropriate task.</string>
+    <string name="to_njit">To NJIT</string>
+    <string name="from_njit">From NJIT</string>
 
 
 </resources>

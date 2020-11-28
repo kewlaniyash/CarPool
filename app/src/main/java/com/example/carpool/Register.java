@@ -31,7 +31,7 @@ import java.util.Map;
 public class Register extends AppCompatActivity {
     public static final String TAG = "TAG";
     EditText mFullName,mEmail,mPassword,mPhone;
-    Button mRegister;
+    Button mRegister, mBack;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
     FirebaseFirestore fStore;
@@ -45,90 +45,59 @@ public class Register extends AppCompatActivity {
         mFullName   = findViewById(R.id.name);
         mEmail      = findViewById(R.id.email);
         mPassword   = findViewById(R.id.password);
-        mPhone      = findViewById(R.id.phone);
         mRegister = findViewById(R.id.register);
+        mBack = findViewById(R.id.back3);
 
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Login.class));
+            }
+        });
 
         mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String email = mEmail.getText().toString().trim();
-                String password = mPassword.getText().toString().trim();
-                final String fullName = mFullName.getText().toString();
-                final String phone    = mPhone.getText().toString();
-
-                if(TextUtils.isEmpty(email)){
-                    mEmail.setError("Email is Required.");
-                    return;
+                String email = mEmail.getText().toString();
+                String pwd = mPassword.getText().toString();
+                if(email.isEmpty()){
+                    mEmail.setError("Please enter email id");
+                    mEmail.requestFocus();
                 }
-
-                if(TextUtils.isEmpty(password)){
-                    mPassword.setError("Password is Required.");
-                    return;
+                else  if(pwd.isEmpty()){
+                    mPassword.setError("Please enter your password");
+                    mPassword.requestFocus();
                 }
-
-                if(password.length() < 6){
-                    mPassword.setError("Password Must be greater than 6 Characters");
-                    return;
+                else  if(email.isEmpty() && pwd.isEmpty()){
+                    Toast.makeText(Register.this,"Fields Are Empty!",Toast.LENGTH_SHORT).show();
                 }
-
-                progressBar.setVisibility(View.VISIBLE);
-
-                // register the user in firebase
-
-                fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-
-                            // send verification link
-
-                            FirebaseUser fuser = fAuth.getCurrentUser();
-                            fuser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void aVoid) {
-                                    Toast.makeText(Register.this, "Verification Email Has been Sent.", Toast.LENGTH_SHORT).show();
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    Log.d(TAG, "onFailure: Email not sent " + e.getMessage());
-                                }
-                            });
-
-                            Toast.makeText(Register.this, "User Created.", Toast.LENGTH_SHORT).show();
-                            userID = fAuth.getCurrentUser().getUid();
-                            DocumentReference documentReference = fStore.collection("users").document(userID);
-                            Map<String,Object> user = new HashMap<>();
-                            user.put("fName",fullName);
-                            user.put("email",email);
-                            user.put("phone",phone);
-                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void aVoid) {
-                                    Log.d(TAG, "onSuccess: user Profile is created for "+ userID);
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    Log.d(TAG, "onFailure: " + e.toString());
-                                }
-                            });
-                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-
-                        }else {
-                            Toast.makeText(Register.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.GONE);
+                else  if(!(email.isEmpty() && pwd.isEmpty())){
+                    fAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(!task.isSuccessful()){
+                                Toast.makeText(Register.this,"SignUp Unsuccessful, Please Try Again!",Toast.LENGTH_SHORT).show();
+                            }
+                            else {
+                                startActivity(new Intent(Register.this, MainActivity.class));
+                            }
                         }
-                    }
-                });
+                    });
+                }
+                else{
+                    Toast.makeText(Register.this,"Error Occurred!",Toast.LENGTH_SHORT).show();
+
+                }
             }
         });
+
+
+
 
 
     }

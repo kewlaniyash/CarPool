@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="#CA0303"
+        android:fontFamily="@font/itc_font"
+        android:text="Back"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#CA0303"
+        app:icon="@drawable/logout"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="198dp"
@@ -59,30 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696" />
-
-    <EditText
-        android:id="@+id/phone"
-        android:layout_width="297dp"
-        android:layout_height="45dp"
-        android:layout_margin="5dp"
-        android:autofillHints=""
-        android:background="#1C4387"
-        android:ems="10"
-        android:fontFamily="@font/itc_font"
-        android:hint="@string/phone_number"
-        android:includeFontPadding="true"
-        android:inputType="number"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#000000"
-        android:textColorHint="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.604" />
 
     <EditText
         android:id="@+id/email"
@@ -209,7 +205,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
+        app:layout_constraintVertical_bias="0.701" />
 
     <ProgressBar
         android:id="@+id/register_progress"
