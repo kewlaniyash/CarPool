@@ -6,6 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="198dp"
+        android:layout_height="177dp"
+        android:contentDescription="@string/todo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/njit" />
+
     <ProgressBar
         android:id="@+id/register_progress2"
         style="?android:attr/progressBarStyle"
@@ -25,7 +37,7 @@
         android:layout_height="45dp"
         android:layout_margin="5dp"
         android:autofillHints=""
-        android:background="#D1CBCB"
+        android:background="#1C4387"
         android:ems="10"
         android:fontFamily="@font/itc_font"
         android:hint="@string/name"
@@ -52,7 +64,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintVertical_bias="0.318" />
 
     <EditText
         android:id="@+id/email2"
@@ -60,7 +72,7 @@
         android:layout_height="45dp"
         android:layout_margin="5dp"
         android:autofillHints=""
-        android:background="#D1CBCB"
+        android:background="#1C4387"
         android:ems="10"
         android:fontFamily="@font/itc_font"
         android:hint="@string/email"
@@ -78,7 +90,7 @@
         app:layout_constraintVertical_bias="0.486" />
 
     <Button
-        android:id="@+id/login3"
+        android:id="@+id/back"
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:background="#CA0303"
@@ -121,7 +133,7 @@
         android:layout_height="45dp"
         android:layout_margin="5dp"
         android:autofillHints=""
-        android:background="#D1CBCB"
+        android:background="#1C4387"
         android:ems="10"
         android:fontFamily="@font/itc_font"
         android:hint="Car Number"
@@ -144,7 +156,7 @@
         android:layout_height="45dp"
         android:layout_margin="5dp"
         android:autofillHints=""
-        android:background="#D1CBCB"
+        android:background="#1C4387"
         android:ems="10"
         android:fontFamily="@font/itc_font"
         android:hint="@string/phone_number"
@@ -192,27 +204,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-thin"
         android:text="@string/update_user"
+        android:textColor="#000000"
         android:textSize="45sp"
         android:textStyle="bold"
         app:fontFamily="@font/itc_font"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="196dp"
-        android:layout_height="194dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007"
-        app:srcCompat="@drawable/njit" />
+        app:layout_constraintVertical_bias="0.245" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
