@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="90"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/njit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/itc_font"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/size_of_value_five"
+            android:background="#CA0303" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_of_value_five"
+            android:fontFamily="@font/itc_font"
+            android:gravity="center"
+            android:padding="@dimen/size_of_value_five"
+            android:text="@string/please_login_or_create_a_new_account"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/itc_font"
+            android:gravity="center"
+            android:padding="@dimen/size_of_value_five"
+            android:text="@string/Create_register_text"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/size_of_value_five"
+            android:background="#CA0303" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_of_value_thirty"
+            android:layout_marginLeft="@dimen/size_of_value_thirty"
+            android:layout_marginTop="@dimen/size_of_value_twenty"
+            android:layout_marginEnd="@dimen/size_of_value_thirty"
+            android:layout_marginRight="@dimen/size_of_value_thirty"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_bg"
+                android:hint="@string/email_id"
+                android:imeOptions="actionNext"
+                android:inputType="textWebEmailAddress"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:textColorHint="@color/white_80" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_ten"
+                android:background="@drawable/login_bg"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textWebPassword"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:textColorHint="@color/white_80" />
+
+            <LinearLayout
+                android:id="@+id/llLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_of_value_twenty"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/size_of_value_thirty"
+                android:paddingLeft="@dimen/size_of_value_thirty"
+                android:paddingTop="@dimen/size_of_value_ten"
+                android:paddingEnd="@dimen/size_of_value_thirty"
+                android:paddingRight="@dimen/size_of_value_thirty"
+                android:paddingBottom="@dimen/size_of_value_ten">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/red_bg"
+                    android:text="@string/login"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/size_of_value_ten"
+                    android:layout_marginLeft="@dimen/size_of_value_ten"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    android:src="@drawable/login"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRegisterNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_of_value_twenty"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/size_of_value_thirty"
+                android:paddingLeft="@dimen/size_of_value_thirty"
+                android:paddingTop="@dimen/size_of_value_ten"
+                android:paddingEnd="@dimen/size_of_value_thirty"
+                android:paddingRight="@dimen/size_of_value_thirty"
+                android:paddingBottom="@dimen/size_of_value_ten">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/red_bg"
+                    android:text="@string/register_now"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/size_of_value_ten"
+                    android:layout_marginLeft="@dimen/size_of_value_ten"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    android:src="@drawable/register"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size_of_value_twenty"
+        android:gravity="center"
+        android:padding="@dimen/size_of_value_ten"
+        android:text="@string/copyright_2020_all_rights_reserved"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_of_value_sixteen" />
+
+</LinearLayout>

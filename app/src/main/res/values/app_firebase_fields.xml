@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_field_from">from</string>
+    <string name="firebase_field_to">to</string>
+    <string name="firebase_field_car_number">carNumber</string>
+    <string name="firebase_field_name">name</string>
+    <string name="fireBase_email_id">emailId</string>
+    <string name="firebase_field_mobile_number">mobileNumber</string>
+</resources>

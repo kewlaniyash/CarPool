@@ -75,7 +75,7 @@
         android:background="#1C4387"
         android:ems="10"
         android:fontFamily="@font/itc_font"
-        android:hint="@string/email"
+        android:hint="@string/email_id"
         android:includeFontPadding="true"
         android:inputType="textWebEmailAddress"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"

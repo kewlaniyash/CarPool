@@ -1,3 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="size_of_value_five">5dp</dimen>
+    <dimen name="size_of_value_ten">10dp</dimen>
+    <dimen name="size_of_value_fifteen">15dp</dimen>
+    <dimen name="size_of_value_twenty">20dp</dimen>
+
+
+    <dimen name="font_size_of_value_fourteen">14sp</dimen>
+    <dimen name="font_size_of_value_sixteen">16sp</dimen>
+    <dimen name="font_size_of_value_twenty">20sp</dimen>
+    <dimen name="font_size_of_value_twenty_five">25sp</dimen>
+    <dimen name="font_size_of_value_thirty">30sp</dimen>
+    <dimen name="font_size_of_value_thirty_five">35sp</dimen>
+    <dimen name="size_of_value_thirty">30dp</dimen>
+    <dimen name="size_of_value_eight">8dp</dimen>
+    <dimen name="size_of_value_twelve">12dp</dimen>
 </resources>

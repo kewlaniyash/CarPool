@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/layout_register_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="90"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/njit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/itc_font"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/size_of_value_five"
+            android:background="#CA0303" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/itc_font"
+            android:gravity="center"
+            android:padding="@dimen/size_of_value_five"
+            android:text="@string/welcome_to_njit_highlander_please_fill_in_the_fields_below"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/size_of_value_five"
+            android:background="#CA0303" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_of_value_thirty"
+            android:layout_marginLeft="@dimen/size_of_value_thirty"
+            android:layout_marginTop="@dimen/size_of_value_twenty"
+            android:layout_marginEnd="@dimen/size_of_value_thirty"
+            android:layout_marginRight="@dimen/size_of_value_thirty"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_bg"
+                android:hint="@string/name"
+                android:imeOptions="actionNext"
+                android:inputType="textWebEmailAddress"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:textColorHint="@color/white_90" />
+
+            <EditText
+                android:id="@+id/etEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_eight"
+                android:background="@drawable/login_bg"
+                android:hint="@string/email_id"
+                android:imeOptions="actionNext"
+                android:inputType="textWebEmailAddress"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:textColorHint="@color/white_90" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_eight"
+                android:background="@drawable/login_bg"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textWebPassword"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:textColorHint="@color/white_90" />
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_of_value_twenty"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size_of_value_twenty"
+        android:gravity="center"
+        android:padding="@dimen/size_of_value_ten"
+        android:text="@string/copyright_2020_all_rights_reserved"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_of_value_sixteen" />
+
+</LinearLayout>

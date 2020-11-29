@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/layout_offer_ride_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/njit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/itc_font"
+                android:gravity="center"
+                android:text="@string/offer_ride"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:background="#CA0303" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:fontFamily="@font/itc_font"
+                android:gravity="center"
+                android:padding="@dimen/size_of_value_five"
+                android:text="• You can offer rides to/from NJIT by selecting the appropriate task."
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/itc_font"
+                android:gravity="center"
+                android:padding="@dimen/size_of_value_five"
+                android:text="• The maximum number of passengers are limited to 3 with respect to COVID-19 guidelines!"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:background="#CA0303" />
+
+            <LinearLayout
+                android:id="@+id/llToNJIT"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_of_value_thirty"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/baseline_school_white_18dp" />
+
+                <TextView
+                    android:id="@+id/tvToNJIT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/size_of_value_eight"
+                    android:layout_marginLeft="@dimen/size_of_value_eight"
+                    android:text="@string/to_njit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_of_value_sixteen" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llFromNJIT"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_of_value_twenty"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/baseline_apartment_white_18dp" />
+
+                <TextView
+                    android:id="@+id/tvFromNJIT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/size_of_value_eight"
+                    android:layout_marginLeft="@dimen/size_of_value_eight"
+                    android:text="@string/from_njit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_of_value_sixteen" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

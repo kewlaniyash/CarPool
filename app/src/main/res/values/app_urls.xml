@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_rides">rides</string>
+    <string name="api_users">users</string>
+</resources>
